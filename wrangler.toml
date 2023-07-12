@@ -1,4 +1,4 @@
-name = "sandbox"
+name = "vlessnode"
 main = "src/worker.js"
 compatibility_date = "2023-06-27"
 
