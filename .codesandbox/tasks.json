@@ -11,7 +11,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
+      "command": "yarn run wrangler && yarn start",
       "runAtStart": true,
       "preview": {
         "port": 8787
@@ -19,7 +19,7 @@
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
+      "command": "yarn run wrangler && yarn build",
       "runAtStart": false
     }
   }
