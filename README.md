@@ -3,7 +3,7 @@
 ## 部署到 codesandbox
 
 - 进入 codesandbox 后关联该项目，则可完成自动部署，会部署到 codesandbox 提供的 cloudflare 账号的 workers 服务
- - 此种方式无法匿名 UUID ，为 wrangler.toml 中定义的 UUID 值
+ - 建议配置环境变量UUID值以隐藏路径
 
 ## 部署到私人 cloudflare workers
 
