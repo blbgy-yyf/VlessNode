@@ -1343,7 +1343,7 @@ function createClashMetaProfiles(list, userID, hostName) {
  */
 function createNormalNode(list, userID, hostName) {
 	const createTemplate = (title, content) => {
-    return content
+		return content + '\n';
 		return `################################################################
 ${title}
 ---------------------------------------------------------------
