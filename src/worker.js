@@ -1342,18 +1342,12 @@ function createClashMetaProfiles(list, userID, hostName) {
  * @returns {string}
  */
 function createNormalNode(list, userID, hostName) {
-	const createTemplate = (title, content) => {
+	const createTemplate = (content) => {
 		return content + '\n';
-		return `################################################################
-${title}
----------------------------------------------------------------
-${content}
----------------------------------------------------------------\n`;
 	};
 	return `
 ${list.reduce((pre, proxyIP) => {
 	pre += createTemplate(
-		`v2ray ip:${proxyIP}`,
 		`${`vless://${userID}@${proxyIP}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${proxyIP}`}`
 	);
 	return pre;
