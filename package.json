@@ -3,11 +3,15 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
+		"build": "node build.js",
 		"deploy": "wrangler publish",
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20230419.0",
+		"@ltd/j-toml": "^1.38.0",
+		"cross-env": "^7.0.3",
+		"lodash": "^4.17.21",
 		"wrangler": "^3.0.0"
 	}
 }
