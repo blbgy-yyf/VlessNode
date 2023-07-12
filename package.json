@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"build": "node build.js",
+		"wrangler": "node wrangler.js",
 		"deploy": "wrangler publish",
 		"start": "wrangler dev"
 	},
